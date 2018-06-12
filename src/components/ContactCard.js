@@ -10,8 +10,8 @@ function  ContactCard(){
     </div>
     <div className="contact-me"><p>Contact</p></div>
     <div className='bottom-bar'></div>
-    <div className="email"><div className='contact-email'></div><div className='contact-text'><p>This is my email</p></div></div>
-    <div className="linkedin"><div className='contact-linkedin'></div><div className='contact-text'><p>This is my linkedin</p></div></div> 
+    <div className="email"><div className='contact-email'></div><div className='contact-text'><h3>Email</h3><p>This is my email</p></div></div>
+    <div className="linkedin"><div className='contact-linkedin'></div><div className='contact-text'><h3>Linkedin</h3><p>This is my linkedin</p></div></div> 
     </div>
   );
 }

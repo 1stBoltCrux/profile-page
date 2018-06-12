@@ -15,6 +15,11 @@
   width: 100%;
   margin-bottom: 65px;
 }
+
+.bold {
+  font-weight: 600;
+
+}
 .diamond-container {
   width: 100%;
   justify-content: space-around;
@@ -23,6 +28,7 @@
   display: flex;
 }
 .diamond {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +36,7 @@
   box-sizing: border-box;
    width: 150px;
    height: 150px;
-   background-color: #2d2d2d;
+   border: 1px solid #2d2d2d;
    transform: rotate(45deg);
 }
 
@@ -45,6 +51,7 @@
   background-color: #2d2d2d;
   height: auto;
   width: 100%;
+
 }
 
 .nav {
@@ -62,16 +69,40 @@
   height: 50px;
 }
 
-.splash-title {
-  font-size: 2rem;
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.nav-diamond {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  margin: 0 1rem 0 1rem;
+}
 
+.splash-title {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  border: 1px solid #2d2d2d;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
 justify-content: center;
   position: absolute;
   align-self: center;
-  width: 50%;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+.splash-title p {
+  transform: rotate(-45deg);
 }
 
 /* // CONTACT CARD // */
@@ -85,6 +116,7 @@ justify-content: center;
   height: auto;
 }
 .profile {
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-around;
   height: 175px;
@@ -97,7 +129,8 @@ justify-content: center;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   height: 65px;
   min-width: 65px;
-  background-color: black;
+  background-image: url(./components/ted1.jpg);
+  background-size: cover;
   border-radius: 50%;
   padding: 1rem;
 }
@@ -140,6 +173,7 @@ justify-content: center;
 }
 
 .email {
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,8 +187,11 @@ justify-content: center;
 .contact-email {
   width: 65px;
   height: 65px;
-  background-color: black;
   border-radius: 50%;
+  background-image: url(./components/gmail.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-text {
@@ -163,6 +200,7 @@ justify-content: center;
 }
 
 .linkedin {
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,12 +208,59 @@ justify-content: center;
   width: 100%;
   background-color: white;
   padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 65px;
 }
 
 .contact-linkedin {
     width: 65px;
     height: 65px;
-    background-color: black;
+    background-image: url(./components/linkedin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 50%;
+}
+
+.projects-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-image: url(./components/backdrop2.jpg);
+}
+
+.projects-container h3 {
+  color: black;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project {
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+  display: flex;
+  height: 250px;
+  width: 33%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.project-description {
+padding-left: 1rem;
+width: 50%;
+height: inherit;
+}
+
+.project-pic {
+  height: inherit;
+  width: 50%;
+  background-image: url(./components/doctor-code.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
