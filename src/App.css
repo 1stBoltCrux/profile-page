@@ -1,0 +1,45 @@
+.app {
+  width: 100%;
+}
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./components/backdrop.jpg);
+  height: 500px;
+  width: 100%;
+}
+.diamond-container {
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+  top: 75px;
+  display: flex;
+}
+.diamond {
+  box-sizing: border-box;
+   width: 150px;
+   height: 150px;
+   background-color: #151c1d;
+   border: 2px solid #3f3f41;
+     transform: rotate(45deg);
+}
+
+.main-container {
+  background-color: #2d2d2d;
+  height: 300px;
+  width: 100%;
+}
+
+.nav {
+  opacity: .7;
+  box-shadow: 0px 2px 2px black;
+  background-color: white;
+   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
