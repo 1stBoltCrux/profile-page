@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: flex-end;
   background-image: url(./components/backdrop.jpg);
-  height: 600px;
+  height: 1000px;
   width: 100%;
   margin-bottom: 65px;
 }
@@ -67,6 +67,13 @@
   display: flex;
   justify-content: center;
   height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-self: flex-end;
+  width: 20%;
+  justify-content: space-around;
 }
 
 .title {
@@ -229,6 +236,9 @@ justify-content: center;
   height: 800px;
   width: 100%;
   background-image: url(./components/backdrop2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projects-container h3 {
@@ -240,6 +250,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   width: 100%;
+
 }
 
 .project {
@@ -247,6 +258,7 @@ justify-content: center;
   display: flex;
   height: 250px;
   width: 33%;
+  min-width: 320px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 1rem;
 }
