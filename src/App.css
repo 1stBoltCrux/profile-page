@@ -59,9 +59,9 @@
   font-weight: 600;
   font-family: 'Arsenal', sans-serif;
   opacity: .8;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   background-color: white;
-   overflow: hidden;
+  overflow: hidden;
   position: fixed;
   width: 100%;
   display: flex;
@@ -73,6 +73,7 @@
   display: flex;
   align-self: flex-end;
   width: 20%;
+  min-width: 150px;
   justify-content: space-around;
 }
 
