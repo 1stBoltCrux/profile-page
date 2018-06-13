@@ -241,6 +241,17 @@ justify-content: center;
   background-size: cover;
 }
 
+.project-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  width: 320px;
+  margin: 1rem;
+}
+
 .projects-container h3 {
   color: black;
   font-size: 2rem;

@@ -19,10 +19,11 @@ function  Projects() {
   return (
     <div className='projects-container'>
     <h3>Projects</h3>
+    <div className='project-box'>
     {
       projectInfo.map(function(project) {
         return (
-          <div className='projects'>
+          <div className='card-box'>
             <ProjectCard
               project = {project}/>
           </div>
@@ -30,6 +31,7 @@ function  Projects() {
 
       })
     }
+    </div>
     </div>
   );
 }
