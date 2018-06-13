@@ -1,16 +1,20 @@
-import React, { Component}  from 'react';
-import '../App.css'
+import React, { Component}  from "react";
+import "../App.css"
+import ProjectCard from './ProjectCard.js'
+// import doctorCode from './doctor-code.JPG'
+const projectInfo = [
+  {
+    name: "Better Doctor API",
+    description: "A project utilizing Better Doctor's API to help people find doctor's fitting to their needs.",
+    image: './doctor-code.JPG'
+  }
+];
 
 function  Projects() {
-  return(
+  return (
     <div className='projects-container'>
     <h3>Projects</h3>
-    <div className='projects'>
-    <div className='project'>
-    <div className='project-description'><h3>Project Name</h3><p>This is one of my many fantastic projects. Aren't you lucky.</p></div>
-    <div className='project-pic'></div>
-    </div>
-    </div>
+  <ProjectCard />
     </div>
   );
 }

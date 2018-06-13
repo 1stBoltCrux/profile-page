@@ -116,7 +116,7 @@ justify-content: center;
   height: auto;
 }
 .profile {
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
   display: flex;
   justify-content: space-around;
   height: 175px;
@@ -126,7 +126,7 @@ justify-content: center;
 }
 
 .profile-pic {
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
   height: 65px;
   min-width: 65px;
   background-image: url(./components/ted1.jpg);
@@ -173,7 +173,7 @@ justify-content: center;
 }
 
 .email {
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +200,7 @@ justify-content: center;
 }
 
 .linkedin {
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -233,6 +233,7 @@ justify-content: center;
 
 .projects-container h3 {
   color: black;
+  font-size: 2rem;
 }
 
 .projects {
@@ -254,6 +255,11 @@ justify-content: center;
 padding-left: 1rem;
 width: 50%;
 height: inherit;
+}
+
+.project-description h3 {
+  color: white;
+    font-size: 1.5rem;
 }
 
 .project-pic {

@@ -6,6 +6,8 @@ import  ContactCard from './components/ContactCard.js';
 import Projects from './components/Projects.js'
 import './App.css';
 
+
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ class App extends Component {
       <NavBar />
         <Backdrop />
         <MainContent />
-        <Projects />
+        <Projects/>
       </div>
     );
   }
