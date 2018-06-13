@@ -288,8 +288,25 @@ height: inherit;
 .project-pic {
   height: inherit;
   width: 50%;
-  background-image: url(./components/doctor-code.JPG);
+  /* background-image: url(./components/doctor-code.JPG); */
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 
+}
+
+.project1 {
+  background-image: url(./components/doctor-code.JPG);
+}
+
+.project2 {
+  background-image: url(./components/backcountry.png);
+}
+
+.project3 {
+  background-image: url(./components/smithrock.png);
+}
+
+.project4 {
+  background-image: url(./components/commongood.png);
 }
