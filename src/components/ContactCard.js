@@ -1,19 +1,38 @@
 import "../App.css"
 import React, { Component} from "react";
+import ContactInfo from './ContactInfo.js'
 
-function  ContactCard(){
+
+
+export default class ContactCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isCardHidden: true};
+    this.handleClick = this.handleClick.bind(this);
+}
+
+handleClick() {
+   this.setState(prevState => ({
+     isCardHidden: !prevState.isCardHidden
+   }));
+ }
+  render () {
+    let currentlyVisibleContent = null;
+    if (this.state.isCardHidden === false) {
+      currentlyVisibleContent = <ContactInfo />;
+    } else {
+      currentlyVisibleContent = null;
+    }
   return (
     <div className="contact-card">
     <div className="profile">
     <div className="profile-pic"></div>
     <div className="profile-text"><h3>Ted Leary</h3><p>Hi, Im Ted Leary a junior front end developer</p></div>
     </div>
-    <div className="contact-me"><p>Contact</p></div>
+    <div id='contact-me' className="contact-me" onClick={this.handleClick}><p>Contact</p></div>
     <div className='bottom-bar'></div>
-    <div className="email"><div className='contact-email'></div><div className='contact-text'><h3>Email</h3><p>This is my email</p></div></div>
-    <div className="linkedin"><div className='contact-linkedin'></div><div className='contact-text'><h3>Linkedin</h3><p>This is my linkedin</p></div></div> 
+      {currentlyVisibleContent}
     </div>
   );
+  }
 }
-
-export default ContactCard
